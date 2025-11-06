@@ -1,0 +1,63 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/consentia/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/consentia/",
+          "mainDocId": "sumario-executivo",
+          "docs": [
+            {
+              "id": "analise-financeira-tecnica",
+              "path": "/consentia/analise-financeira-tecnica",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "entendimento-problema",
+              "path": "/consentia/entendimento-problema",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "equipe",
+              "path": "/consentia/equipe",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "impacto",
+              "path": "/consentia/impacto",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "roadmap",
+              "path": "/consentia/roadmap",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "solucao",
+              "path": "/consentia/solucao",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "sumario-executivo",
+              "path": "/consentia/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/consentia/",
+                "label": "sumario-executivo"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

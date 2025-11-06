@@ -1,0 +1,24 @@
+{
+  "id": "roadmap",
+  "title": "Roadmap",
+  "description": "Visão Geral",
+  "source": "@site/docs/roadmap.md",
+  "sourceDirName": ".",
+  "slug": "/roadmap",
+  "permalink": "/consentia/roadmap",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "roadmap",
+    "title": "Roadmap",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Equipe",
+    "permalink": "/consentia/equipe"
+  }
+}

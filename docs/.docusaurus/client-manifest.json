@@ -1,0 +1,223 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "237": [
+      237
+    ],
+    "17896441": [
+      869,
+      401
+    ],
+    "main": [
+      354,
+      869,
+      792
+    ],
+    "runtime~main": [
+      792,
+      869,
+      354
+    ],
+    "0c8bb1d2": [
+      239
+    ],
+    "0dffb83e": [
+      821
+    ],
+    "0e384e19": [
+      976
+    ],
+    "39dc9eef": [
+      519
+    ],
+    "499dd3d4": [
+      710
+    ],
+    "59f91f8b": [
+      389
+    ],
+    "5e95c892": [
+      647
+    ],
+    "83b33c9f": [
+      382
+    ],
+    "a7bd4aaa": [
+      98
+    ],
+    "a94703ab": [
+      869,
+      48
+    ],
+    "aba21aa0": [
+      742
+    ],
+    "b8991bb5": [
+      721
+    ],
+    "styles": [
+      48,
+      354,
+      401,
+      792,
+      869
+    ]
+  },
+  "assets": {
+    "48": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.448e009f.js",
+          "hash": "d9b6f529128559ae",
+          "publicPath": "/consentia/assets/js/a94703ab.448e009f.js"
+        }
+      ]
+    },
+    "98": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.bf4288c6.js",
+          "hash": "8e671e7f8007958c",
+          "publicPath": "/consentia/assets/js/a7bd4aaa.bf4288c6.js"
+        }
+      ]
+    },
+    "237": {
+      "js": [
+        {
+          "file": "assets/js/237.5a190752.js",
+          "hash": "ebdf316ebb9fc572",
+          "publicPath": "/consentia/assets/js/237.5a190752.js"
+        }
+      ]
+    },
+    "239": {
+      "js": [
+        {
+          "file": "assets/js/0c8bb1d2.f98110c6.js",
+          "hash": "c66bad01bfcffa67",
+          "publicPath": "/consentia/assets/js/0c8bb1d2.f98110c6.js"
+        }
+      ]
+    },
+    "354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.bad11c02.js",
+          "hash": "f4731f801f4b5306",
+          "publicPath": "/consentia/assets/js/runtime~main.bad11c02.js"
+        }
+      ]
+    },
+    "382": {
+      "js": [
+        {
+          "file": "assets/js/83b33c9f.20dbebbb.js",
+          "hash": "b2a1150bce39c21b",
+          "publicPath": "/consentia/assets/js/83b33c9f.20dbebbb.js"
+        }
+      ]
+    },
+    "389": {
+      "js": [
+        {
+          "file": "assets/js/59f91f8b.0affa4c7.js",
+          "hash": "8601c5df22390e8f",
+          "publicPath": "/consentia/assets/js/59f91f8b.0affa4c7.js"
+        }
+      ]
+    },
+    "401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.c2549ff3.js",
+          "hash": "f50d8e6d12e078d2",
+          "publicPath": "/consentia/assets/js/17896441.c2549ff3.js"
+        }
+      ]
+    },
+    "519": {
+      "js": [
+        {
+          "file": "assets/js/39dc9eef.20645eb9.js",
+          "hash": "53ef22e1624f51f4",
+          "publicPath": "/consentia/assets/js/39dc9eef.20645eb9.js"
+        }
+      ]
+    },
+    "647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.61aec2f5.js",
+          "hash": "5ad201cb976e3427",
+          "publicPath": "/consentia/assets/js/5e95c892.61aec2f5.js"
+        }
+      ]
+    },
+    "710": {
+      "js": [
+        {
+          "file": "assets/js/499dd3d4.7012e05c.js",
+          "hash": "0c508e84adc110fd",
+          "publicPath": "/consentia/assets/js/499dd3d4.7012e05c.js"
+        }
+      ]
+    },
+    "721": {
+      "js": [
+        {
+          "file": "assets/js/b8991bb5.00089c4b.js",
+          "hash": "977aea61b5910348",
+          "publicPath": "/consentia/assets/js/b8991bb5.00089c4b.js"
+        }
+      ]
+    },
+    "742": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.827b74c2.js",
+          "hash": "6e80132cd1350785",
+          "publicPath": "/consentia/assets/js/aba21aa0.827b74c2.js"
+        }
+      ]
+    },
+    "792": {
+      "js": [
+        {
+          "file": "assets/js/main.944e832e.js",
+          "hash": "5bbe44c301a7be60",
+          "publicPath": "/consentia/assets/js/main.944e832e.js"
+        }
+      ]
+    },
+    "821": {
+      "js": [
+        {
+          "file": "assets/js/0dffb83e.3abaa458.js",
+          "hash": "d60716e7911b0536",
+          "publicPath": "/consentia/assets/js/0dffb83e.3abaa458.js"
+        }
+      ]
+    },
+    "869": {
+      "css": [
+        {
+          "file": "assets/css/styles.0ac7e1dd.css",
+          "hash": "b7306c986cc367dc",
+          "publicPath": "/consentia/assets/css/styles.0ac7e1dd.css"
+        }
+      ]
+    },
+    "976": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.2e34c9bc.js",
+          "hash": "672d8b6029f3b1b6",
+          "publicPath": "/consentia/assets/js/0e384e19.2e34c9bc.js"
+        }
+      ]
+    }
+  }
+}
