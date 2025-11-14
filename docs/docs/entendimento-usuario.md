@@ -4,7 +4,7 @@ title: Entendimento do Usuário
 sidebar_position: 2
 ---
 
-# Entendimento do Usuário
+&emsp;O entendimento do usuário, quando se fala sobre projetos de tecnologia, é essencial. Já que ele permite que desde a concepção do projeto, o seu design seja centrado no usuário. É por isso que a Consentia desenvolveu esse passo inicial desde os primeiros momentos.
 
 ## Quem são os Usuários
 
