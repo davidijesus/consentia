@@ -1,0 +1,28 @@
+{
+  "id": "orquestracao-agentes",
+  "title": "Orqeustração de Agentes",
+  "description": "Arquitetura Geral da Orquestração",
+  "source": "@site/docs/orquestracao-agentes.md",
+  "sourceDirName": ".",
+  "slug": "/orquestracao-agentes",
+  "permalink": "/consentia/orquestracao-agentes",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "orquestracao-agentes",
+    "title": "Orqeustração de Agentes",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Solução",
+    "permalink": "/consentia/solucao"
+  },
+  "next": {
+    "title": "Impacto",
+    "permalink": "/consentia/impacto"
+  }
+}

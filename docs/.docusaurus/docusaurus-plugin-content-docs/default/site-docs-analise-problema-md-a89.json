@@ -1,0 +1,28 @@
+{
+  "id": "analise-problema",
+  "title": "Análise do Problema",
+  "description": "&emsp;O problema que foi identificado se baseia em três pilares principais que juntos articulam barreiras que dificultam a operação eficiente dos Comitês de Ética nacionais. Esses itens são descritos abaixo:",
+  "source": "@site/docs/analise-problema.md",
+  "sourceDirName": ".",
+  "slug": "/analise-problema",
+  "permalink": "/consentia/analise-problema",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "analise-problema",
+    "title": "Análise do Problema",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sumário Executivo",
+    "permalink": "/consentia/"
+  },
+  "next": {
+    "title": "Entendimento do Usuário",
+    "permalink": "/consentia/entendimento-usuario"
+  }
+}

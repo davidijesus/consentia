@@ -1,0 +1,28 @@
+{
+  "id": "entendimento-usuario",
+  "title": "Entendimento do Usuário",
+  "description": "Quem são os Usuários",
+  "source": "@site/docs/entendimento-usuario.md",
+  "sourceDirName": ".",
+  "slug": "/entendimento-usuario",
+  "permalink": "/consentia/entendimento-usuario",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "entendimento-usuario",
+    "title": "Entendimento do Usuário",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Análise do Problema",
+    "permalink": "/consentia/analise-problema"
+  },
+  "next": {
+    "title": "Solução",
+    "permalink": "/consentia/solucao"
+  }
+}
