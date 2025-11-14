@@ -1,125 +1,48 @@
 ---
 id: analise-financeira-tecnica
 title: Análise Financeira e Técnica
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 # Análise Financeira e Técnica
 
-## Premissas  
+## Premissas e Modelo de Custo
 
-&emsp;A Consentia adota um modelo de receita B2G (Business to Government), baseado em licenciamento anual da plataforma, suporte técnico e módulos adicionais contratados sob demanda. O cálculo financeiro considera prefeituras de médio porte, com contratos anuais de aproximadamente R$ 180.000.  
+&emsp;Para estimar a viabilidade financeira da Consentia, consideramos um cenário de comitê de ética que analisa mil protocolos por ano, aproximadamente oitenta e três por mês, em uma instituição de grande porte. Em média, cada protocolo consome entre três e cinco horas somando secretaria e pareceristas, incluindo leitura inicial, conferência documental, ida e volta de correções e emissão do parecer. A hipótese da Consentia é reduzir esse esforço direto em pelo menos quarenta por cento em casos padrão, por meio de triagem inteligente, padronização e melhoria na qualidade do TCLE antes da análise humana.
 
-&emsp;A estrutura operacional é enxuta, com foco em automação e escalabilidade, o que reduz custos fixos e amplia a margem líquida.  
+&emsp;O custo da plataforma pode ser decomposto em três blocos principais. Primeiro, computação em nuvem, incluindo armazenamento de documentos, processamento de modelos de linguagem e execução dos agentes. Segundo, licenciamento e operação de modelos de inteligência artificial, quando aplicável, levando em conta chamadas por mil tokens ou janelas de contexto utilizadas. Terceiro, suporte, observabilidade, monitoramento de segurança e manutenção de integrações com sistemas legados, como Plataforma Brasil e bancos de dados internos.
 
-| Indicador | Valor Estimado | Observações |
-|------------|----------------|-------------|
-| Ticket médio anual | R$ 180.000 | Contrato por prefeitura |
-| Margem líquida operacional | 35% | Após custos diretos e impostos |
-| Tempo médio de retenção | 4 anos | Contratos públicos de longo prazo |
-| Custo de aquisição (CAC) | R$ 40.000 | Equipe técnica, comercial e POC |
-| Investimento inicial | R$ 300.000 | Desenvolvimento, infraestrutura e operação inicial |
+&emsp;Uma forma simplificada de modelar o custo mensal é
 
-## Indicadores-Chave  
+`C_mensal = C_cloud + C_modelos + C_suporte`
 
-### LTV (Lifetime Value)  
-**Fórmula:** LTV = Ticket médio × Margem × Retenção  
+&emsp;O custo unitário por protocolo, considerando N_protocolos_mensal, é dado por
 
-\[
-LTV = 180.000 × 0,35 × 4 = R\$ 252.000
-\]  
-
-&emsp;Cada prefeitura gera R$ 252 mil de lucro líquido ao longo do ciclo de 4 anos.  
-
-### Relação LTV/CAC  
-**Fórmula:** LTV ÷ CAC  
-
-\[
-252.000 ÷ 40.000 = 6,3x
-\]  
-
-&emsp;A cada R$ 1 investido em aquisição, o retorno é de R$ 6,30 — excelente para o padrão govtech.  
-
-### ROI (Retorno sobre o Investimento)  
-**Fórmula:** ROI = (Lucro líquido - Investimento inicial) ÷ Investimento inicial  
+`C_protocolo = C_mensal / N_protocolos_mensal`
 
 
-ROI = (315.000 - 300.000) ÷ 300.000 = 0,05 = 5\%
- 
+## Ganhos de Eficiência e Retorno sobre Investimento
 
-&emsp;O ROI inicial é de 5% no primeiro ano, com crescimento exponencial conforme novas prefeituras são integradas.  
+&emsp;O principal benefício financeiro da Consentia está na redução de tempo de trabalho humano por protocolo, sem perda de qualidade ou segurança. Se um protocolo padrão consome quatro horas de trabalho somando secretaria e pareceristas e a Consentia reduz esse esforço para duas vírgula cinco horas em média, há uma economia de uma vírgula cinco hora por protocolo. Para mil protocolos por ano, isso representa mil e quinhentas horas de trabalho recuperadas.
 
-### Payback  
-**Fórmula:** Payback = Investimento inicial ÷ Lucro líquido anual  
+&emsp;Podemos traduzir essa economia em valor monetário assumindo um custo médio por hora da equipe envolvida. Se considerarmos um valor de oitenta reais por hora, a economia anual aproximada é dada por
 
-Payback = 300.000 ÷ 315.000 = 0,95 /ano 
+`Economia_anual = N_protocolos * delta_horas * C_hora`
 
-&emsp;O investimento inicial é recuperado em aproximadamente 11 meses de operação plena.  
+&emsp;Além da economia direta de horas, existem ganhos indiretos importantes. Estudos iniciam antes, o que reduz risco de perda de financiamento, atrasos em cronogramas e oportunidades perdidas de publicação e colaboração. Em ambientes de pesquisa clínica, esses atrasos podem ter impacto financeiro ainda maior, pois determinadas linhas de estudo estão vinculadas a contratos de pesquisa, metas regulatórias e janelas específicas de recrutamento.
 
-## Sustentabilidade Financeira  
+ O retorno sobre investimento pode ser aproximado como a razão entre benefícios anuais líquidos e o custo anual da solução, ou seja, o benefício financeiro gerado ao longo do ano dividido pelo custo para manter a plataforma em produção no mesmo período. Quando a economia anual ultrapassa com folga esse custo, o investimento se torna vantajoso. Em cenários de grande volume, a tendência é que essa relação seja ainda mais favorável, pois os custos fixos se diluem e a automação reduz a necessidade de expansão do quadro de funcionários.
 
-&emsp;Com base na retenção e na previsibilidade de contratos públicos, a Consentia mantém um fluxo de receita estável e escalável.  
+## Arquitetura Técnica, Escalabilidade e Confiabilidade
 
-&emsp;A operação se torna lucrativa a partir do segundo ano, com ROI acumulado superior a 100% e margem líquida crescente à medida que novos módulos e integrações são implementados.  
+&emsp;A viabilidade técnica da Consentia se apoia em uma arquitetura de orquestração multiagente baseada em modelos de linguagem, frameworks de agentes e serviços em nuvem. O fluxo começa com ingestão segura de documentos, seguida por extração estruturada, avaliação normativa, análise de risco, análise de clareza do TCLE e geração de parecer preliminar. Cada etapa é encapsulada em agentes, enquanto o orquestrador controla chamadas, pesos de confiança, reconciliação de conflitos e registro detalhado de logs.
 
-| Indicador | Resultado | Interpretação |
-|------------|------------|---------------|
-| ROI (Ano 1) | 5% | Ponto de equilíbrio operacional |
-| Payback | 11 meses | Recuperação rápida do investimento |
-| LTV | R$ 252.000 | Valor líquido por cliente |
-| CAC | R$ 40.000 | Custo competitivo de aquisição |
-| LTV/CAC | 6,3x | Alta eficiência e retenção |
+&emsp;O tempo médio de processamento por protocolo depende principalmente do tempo de inferência dos modelos de linguagem envolvidos. Se um protocolo consome cinco chamadas de um modelo de grande porte com latência de alguns segundos por chamada, o tempo de resposta técnico tende a ser de poucos minutos. Em escala institucional, é possível usar filas distribuídas e paralelização para processar vários protocolos simultaneamente.
 
----
+`capacidade_por_hora = (N_workers * 3600) / T_medio_protocolo`
 
-# Análise Técnica  
+&emsp;Se cada worker completa um protocolo em cento e oitenta segundos, um único worker processa vinte protocolos por hora. Com cinco workers, a capacidade sobe para cem protocolos por hora, desconsiderando sobrecargas e tempos de fila. Ajustando o número de workers conforme a demanda, a arquitetura permanece escalável.
 
-## Arquitetura da Plataforma  
+&emsp;Questões de segurança e conformidade são resolvidas com criptografia em trânsito e em repouso, segregação por instituição, controle de acesso baseado em perfis e trilhas de auditoria completas para cada decisão. Logs de orquestração registram qual modelo foi acionado, qual versão foi usada, quais regras foram aplicadas e quais trechos sustentaram cada recomendação. Esses dados permitem auditorias técnicas, ajustes de ontologias de risco e monitoramento de viés ou deriva dos modelos.
 
-&emsp;A Consentia foi projetada sobre uma arquitetura modular e escalável, com infraestrutura em nuvem e integração via APIs. A solução prioriza interoperabilidade com sistemas públicos existentes e conformidade com padrões de dados governamentais (GovData e Infraestrutura Nacional de Dados Espaciais).  
-
-### Componentes Principais  
-
-1. **Frontend Web**  
-   - Framework: React ou Next.js  
-   - Design system baseado em gov.br (cores, tipografia e acessibilidade)  
-   - Interface responsiva com dashboards, mapas interativos e relatórios exportáveis  
-
-2. **Backend**  
-   - Stack: Node.js e Python (FastAPI)  
-   - Microserviços independentes para processamento de dados, geração de relatórios e IA preditiva  
-   - Autenticação via OAuth2 e compatibilidade com login gov.br  
-
-3. **Banco de Dados**  
-   - PostgreSQL com PostGIS para armazenamento geoespacial  
-   - Redis para cache e filas de processamento  
-   - Armazenamento em nuvem (AWS S3 ou Azure Blob) para relatórios e imagens satelitais  
-
-4. **Integrações Externas**  
-   - INMET, ANA, CPRM, MapBiomas e IBGE (dados climáticos, hidrológicos e socioeconômicos)  
-   - S2ID (Sistema Integrado de Informações sobre Desastres)  
-   - APIs estaduais e municipais de geoprocessamento  
-
-5. **Camada de IA e Analytics**  
-   - Modelos de previsão de risco baseados em machine learning (regressão logística e redes neurais leves)  
-   - Geração automática de planos (NLP para estruturação de documentos e relatórios)  
-   - Simulação de impactos financeiros comparando prevenção x reconstrução  
-
-## Segurança e Conformidade  
-
-&emsp;A plataforma adota padrões de segurança compatíveis com a LGPD e com o Manual de Segurança da Informação do governo federal.  
-&emsp;As informações sensíveis são criptografadas em trânsito e em repouso (TLS 1.3 / AES-256).  
-&emsp;Os acessos são controlados por perfis (usuário, gestor municipal, auditor estadual, administrador).  
-
-## Escalabilidade e Manutenção  
-
-&emsp;A Consentia foi desenhada para suportar múltiplas instâncias municipais com isolamento de dados e uso otimizado de recursos. A arquitetura em nuvem permite dimensionamento automático conforme o volume de acessos e novas integrações.  
-
-&emsp;A manutenção técnica é centralizada, com atualizações contínuas via pipeline de CI/CD e monitoramento em tempo real de desempenho e disponibilidade.  
-
-## Inovação Tecnológica  
-
-&emsp;A principal inovação da Consentia está na integração entre dados climáticos, financeiros e administrativos com inteligência artificial aplicada ao setor público.  
-&emsp;A solução cria um novo padrão de automação documental e predição financeira em contextos de gestão climática, reduzindo drasticamente o tempo de resposta e melhorando a eficiência do gasto público.  
-
-&emsp;Com isso, o sistema não apenas digitaliza processos, mas transforma a capacidade de planejamento dos municípios, tornando o Estado mais ágil, transparente e preparado para os desafios climáticos do futuro.  
+&emsp;A combinação de um modelo de custo claro, ganhos significativos de eficiência operacional e uma arquitetura técnica escalável reforça a viabilidade financeira e tecnológica da Consentia co

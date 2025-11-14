@@ -5,45 +5,37 @@ sidebar_position: 0
 slug: /
 ---
 
-## Contexto
+<div style={{margin: 15}}>
+  <div style={{textAlign: 'center'}}>
+        <img src={require("../static/img/consentia.gif").default} style={{width: 1024}} alt="Consentia Banner - Ética que Escala" />
+        <br/>
+    </div>
+</div>
 
-Universidades, hospitais e centros de pesquisa vivem um gargalo na análise ética de estudos com seres humanos. O volume de protocolos submetidos aos CEPs/CONEP cresce, enquanto equipes e ferramentas permanecem limitadas. O resultado é fila, revisões heterogêneas e baixa rastreabilidade das decisões, afetando prazos de projetos, captação de recursos e publicações. Hoje, grande parte do processo é manual: leitura de protocolos extensos, checagem de normas (CNS 466/12, LGPD, ICH-GCP, GDPR), avaliação de riscos e análise de TCLE, sem padronização nem trilhas de auditoria consistentes.
+## Visão Geral
 
-## Contexto e Justificativa
+&emsp;A Consentia é uma infraestrutura ética que utiliza orquestração de agentes de inteligência artificial para acelerar, padronizar e tornar rastreáveis as avaliações éticas de pesquisas científicas com seres humanos. Comitês de Ética em Pesquisa enfrentam hoje um crescimento constante no número de protocolos submetidos sem aumento proporcional na capacidade de análise. Esse desequilíbrio gera filas extensas, avaliações inconsistentes e baixa transparência sobre os critérios utilizados nas decisões.
 
-O problema central não é apenas capacidade, mas a ausência de automação, padronização e explicabilidade. Processos fragmentados em e-mails, PDFs e planilhas elevam o retrabalho e a variância entre pareceres. Uma camada de IA multiagente, com governança e XAI, pode transformar triagem, checagens e documentação — sem substituir o juízo humano.
+## Propósito
 
-## Proposta de Solução
+&emsp;A Consentia propõe resolver esse problema ao estruturar uma camada de triagem avançada baseada em agentes especializados. Esses agentes extraem informações, cruzam normas, avaliam riscos e produzem um parecer preliminar explicável que sempre passa pela revisão humana obrigatória. A solução não substitui o julgamento ético humano, mas cria condições para que ele seja mais informado, ágil e padronizado.
 
-Consentia é uma infraestrutura ética que orquestra agentes de IA para triagem e apoio à decisão em pesquisas com seres humanos. O sistema extrai dados essenciais de protocolos e anexos, aplica normas por meio de uma ontologia de conformidade, avalia riscos (físicos, psicológicos e de privacidade), analisa a clareza e suficiência do TCLE e gera um parecer preliminar explicável, no padrão da Plataforma Brasil, para revisão humana obrigatória.
+## Base Tecnológica
 
-## Como funciona
+&emsp;Os avanços em modelos de linguagem e frameworks de coordenação de agentes como LangGraph, CrewAI e AutoGen permitem hoje a execução segura e orquestrada de análises complexas. Cada recomendação gerada pela Consentia vem acompanhada de justificativa, fontes consultadas, regras acionadas e registros completos de auditoria. O sistema opera com princípios de minimização de dados, aderência à LGPD, criptografia e versionamento controlado.
 
-Quatro camadas compõem o núcleo:  
-AgentDoc (NLP+RAG) para leitura contextual e extração de entidades críticas; AgentLaw (compliance) para requisitos normativos e evidências por regra; AgentRisk e AgentConsent para scoring de risco e legibilidade/suficiência do TCLE; e AgentWriter com o Orquestrador para consolidação, resolução de conflitos, trilhas XAI e emissão do parecer preliminar.  
-Fluxo: upload → extração → regras aplicáveis → risco/TCLE → consolidação → parecer preliminar → revisão do CEP.
+## Objetivos
 
-## Modelo de Monetização
+&emsp;A meta principal é validar em um piloto de noventa dias a redução da triagem de protocolos padrão para até vinte e quatro horas com concordância mínima de oitenta e cinco por cento em relação a pareceres humanos de referência. O piloto também avaliará redução de retrabalho, clareza dos relatórios e satisfação de pesquisadores e pareceristas.
 
-SaaS B2B/B2G para instituições acadêmicas e hospitais, com licença anual por volume de protocolos e usuários. Módulos premium opcionais (plágio, integridade de dados, anonimização, detecção de dados sintéticos) e serviços de onboarding, treinamento e integração via API (export de parecer, sem decisão automática).
+## Público Beneficiário
 
-## Público-Alvo Inicial
+&emsp;A Consentia atende pesquisadores que desejam preparar protocolos mais claros, secretarias de comitês de ética que precisam organizar fluxos de triagem, universidades e hospitais universitários que sofrem com grandes volumes de submissões, e empresas que dependem de revisões éticas, incluindo psicologia digital, biotecnologia e pesquisa clínica.
 
-CEPs de universidades e hospitais universitários com alto volume de protocolos e prazos críticos (ex.: multicêntricos e ensaios clínicos), com expansão para pesquisa clínica privada, psicologia digital e plataformas de teste com usuários.
+## Integrações e Ecosistema
 
-## Estratégia de Implementação
+&emsp;A arquitetura da Consentia permite integração com sistemas externos como Plataforma Brasil, dicionários jurídicos, detectores de plágio, módulos de anonimização, bases sobre populações vulneráveis e pipelines de verificação de integridade de dados. A abordagem modular facilita extensões sem comprometer segurança ou aderência normativa.
 
-- Piloto de 90 dias com 30–50 protocolos históricos cegados e 10 atuais.  
-- Integrações por API, SSO e políticas de acesso; segurança alinhada à LGPD (minimização, criptografia, data-silos e retenção configurável).  
-- Governança de IA com versionamento, auditoria de vieses e monitoramento de deriva.
+## Impacto Esperado
 
-## Impactos Estratégicos Esperados
-
-- Tempo de triagem de semanas para ≤ 24h em casos padrão (hipótese a validar).  
-- Redução de retrabalho em submissões (TCLE/documentação) em 30–40%.  
-- Concordância ≥ 85% com parecer humano de referência.  
-- Padronização e rastreabilidade por meio de logs de regras, fontes e versões de modelos.
-
-## Visão de Futuro
-
-Consentia evolui para um modelo de “Ethics-as-a-Service” interoperável: ontologias compartilháveis, marketplace de agentes (plágio, anonimização, integridade experimental), certificações de segurança (ex.: ISO 27001) e integração ampla com ecossistemas acadêmicos e clínicos. IA orquestra. Humanos decidem. Ética que escala.
+&emsp;O impacto previsto inclui aceleração significativa na triagem de protocolos, maior padronização de critérios, redução de exigências repetidas ao pesquisador, rastreabilidade completa de cada análise e aumento da confiança das instituições no processo de avaliação ética. A Consentia se estabelece como uma nova camada de infraestrutura ética, unindo tecnologia e revisão humana para entregar ética que escala com responsabilidade.

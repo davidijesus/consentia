@@ -1,71 +1,29 @@
 ---
 id: impacto
 title: Impacto
-sidebar_position: 4       
+sidebar_position: 5       
 ---
 
-# Impacto Social  
+&emsp;A Consentia atua em diferentes vertentes trazendo sempre o foco em impacto real e consistente por através dos âmbitos de atuação.
 
-## Visão Geral  
+## Impacto Operacional
 
-&emsp;A Consentia tem como principal propósito gerar impacto social ao fortalecer a capacidade dos municípios brasileiros de prevenir, responder e se recuperar de desastres climáticos e ambientais. A plataforma reduz desigualdades na gestão pública, promovendo eficiência, transparência e proteção de vidas — especialmente em territórios vulneráveis e com baixa estrutura técnica.  
+&emsp;A implementação da Consentia tem potencial para transformar profundamente o fluxo operacional dos comitês de ética. A redução do tempo de triagem para estudos padrão altera a dinâmica de trabalho de secretarias e pareceristas, permitindo que etapas simples sejam resolvidas com mais agilidade e que a capacidade humana seja direcionada aos casos realmente complexos. Essa reorganização melhora o funcionamento interno dos CEPs, reduz o acúmulo de protocolos e diminui a dependência de esforços manuais que hoje consomem grande parte do tempo das equipes.
 
-&emsp;A solução contribui diretamente para os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, em especial os ODS 11 (Cidades e Comunidades Sustentáveis), ODS 13 (Ação Contra a Mudança Global do Clima) e ODS 16 (Paz, Justiça e Instituições Eficazes).  
+&emsp;A aceleração do processo também reduz o volume de retrabalho, já que pesquisadores passam a receber orientações estruturadas antes da análise oficial. Menos devoluções implicam menos revisões pela secretaria e menos ciclos de leitura para pareceristas. Essa otimização reduz desgaste, melhora a comunicação entre usuários e fortalece a eficiência global da instituição.
 
----
+&emsp;Com um sistema que padroniza análises preliminares, a variabilidade entre revisões diminui. Isso cria previsibilidade, aumenta a confiança dos pesquisadores no fluxo e fortalece a autoridade institucional. Processos mais claros e auditáveis também facilitam a integração com estudos multicêntricos e parcerias internacionais que exigem rigor e transparência.
 
-## Impacto Social Direto  
+## Impacto Científico e Institucional
 
-&emsp;O uso da Consentia permite respostas mais rápidas e planejadas a desastres, reduzindo o número de desabrigados e o tempo de espera por assistência.  
+&emsp;Ao reduzir tempos de espera e melhorar a organização documental, a Consentia acelera o avanço científico. Pesquisadores conseguem iniciar estudos mais rapidamente, cumprir cronogramas de financiamento e se adaptar com mais segurança às exigências dos CEPs. Isso fortalece a produção científica e reduz barreiras que atrasam o desenvolvimento de estudos clínicos e pesquisas sociais.
 
-&emsp;Com a automatização de relatórios e integração de dados, municípios passam a liberar verbas de reconstrução e mitigação em semanas, não em meses. Isso significa reconstrução mais ágil, realocação de famílias em menor tempo e diminuição de perdas econômicas locais.  
+&emsp;Instituições ganham maior capacidade de gestão. A rastreabilidade detalhada permite auditorias precisas, reduz incertezas regulatórias e estabelece padrões de governança mais robustos. Com maior clareza nos critérios aplicados e registro completo de cada decisão, universidades e hospitais ampliam sua credibilidade científica e jurídica.
 
-&emsp;Ao democratizar o acesso a ferramentas de análise e planejamento, a plataforma diminui a dependência de consultorias externas e fortalece a autonomia técnica das prefeituras. Municípios com pouca estrutura passam a operar com o mesmo nível de inteligência e precisão que grandes capitais.  
+&emsp;Além disso, a padronização das análises reduz assimetrias de entendimento entre pareceristas e diminui riscos decorrentes de interpretações divergentes de normas como LGPD, CNS 466 e diretrizes internacionais. A instituição se torna mais coerente, mais responsável e mais preparada para lidar com o crescimento de estudos digitais e metodologias inovadoras.
 
----
+## Impacto Social e Ético
 
-## Impacto Econômico e Institucional  
+&emsp;O impacto mais profundo da Consentia está na proteção das pessoas participantes de pesquisa. Ao identificar riscos de forma sistemática, garantir clareza no TCLE e reforçar a aderência normativa, a plataforma fortalece o compromisso ético das instituições com segurança e dignidade humana. Participantes passam a receber documentos mais acessíveis e compreensíveis, o que aumenta a qualidade do consentimento informado e reduz assimetrias entre pesquisadores e voluntários.
 
-&emsp;A melhoria da eficiência administrativa reduz desperdícios e amplia o impacto do investimento público. Cada real aplicado em prevenção pode economizar até cinco reais em reconstrução, conforme estudos do Banco Mundial e da ONU-Habitat.  
-
-&emsp;A Consentia torna essa economia mensurável e transparente, oferecendo indicadores concretos que fortalecem a prestação de contas e a confiança entre cidadãos e governo.  
-
-&emsp;Ao permitir a rastreabilidade de ações e o monitoramento público das medidas adotadas, a plataforma promove uma cultura de governança baseada em dados e resultados.  
-
----
-
-## Impacto Ambiental  
-
-&emsp;A adoção da Consentia estimula políticas públicas voltadas à resiliência climática e ao uso sustentável do território. A partir dos dados consolidados, é possível planejar melhor o uso do solo, identificar áreas de risco e reduzir a ocupação irregular em zonas suscetíveis a desastres.  
-
-&emsp;O comparador de impactos ajuda os gestores a priorizar investimentos em infraestrutura verde e soluções baseadas na natureza, alinhando-se às metas de neutralidade climática e preservação ambiental.  
-
----
-
-## Impacto Comunitário e Humano  
-
-&emsp;Com a redução da burocracia e o aumento da agilidade na resposta, a população afetada é atendida com mais rapidez e dignidade.  
-
-&emsp;Comunidades que historicamente sofrem com lentidão na liberação de recursos passam a contar com uma gestão mais eficiente, o que contribui para restaurar a confiança nas instituições públicas e reduzir a vulnerabilidade social.  
-
-&emsp;A plataforma também incentiva a participação cidadã ao oferecer transparência sobre as ações municipais e estaduais, permitindo que qualquer cidadão acompanhe os planos de prevenção e as medidas executadas em seu território.  
-
----
-
-## Síntese do Impacto  
-
-| Dimensão | Resultado Esperado | Indicador de Sucesso |
-|-----------|-------------------|----------------------|
-| **Social** | Redução do tempo de resposta a desastres e realocação mais rápida de famílias afetadas | Diminuição de dias médios de resposta por evento |
-| **Econômico** | Uso mais eficiente das verbas públicas e redução de desperdícios | Comparador de impactos e economia estimada por município |
-| **Ambiental** | Planejamento territorial sustentável e redução de ocupações em áreas de risco | Mapas de vulnerabilidade e monitoramento de intervenções |
-| **Governança** | Fortalecimento institucional e transparência pública | Acesso público a relatórios e dados integrados |
-| **Humano** | Fortalecimento da confiança e da dignidade das populações afetadas | Satisfação de beneficiários e engajamento comunitário |
-
----
-
-## Visão de Longo Prazo  
-
-&emsp;A Consentia se posiciona como uma política pública digital capaz de mudar a forma como o Brasil reage e se prepara para crises climáticas.  
-
-&emsp;Ao criar uma infraestrutura nacional de gestão de riscos e dados ambientais, a plataforma contribui para a construção de cidades mais seguras, sustentáveis e justas — onde a tecnologia é usada para proteger pessoas, reduzir desigualdades e garantir um futuro mais resiliente para todos.  
+&emsp;A explicabilidade das análises também contribui para práticas mais justas e transparentes. As recomendações deixam de ser percepções individuais e passam a ser argumentos fundamentados, registrados e auditáveis. Isso fortalece a equidade das avaliações e r

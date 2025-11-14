@@ -1,73 +1,39 @@
 ---
 id: solucao
 title: Solução
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-## Visão Geral  
+## Visão Geral da Plataforma
 
-&emsp;Consentia é uma plataforma govtech que integra dados climáticos, financeiros e territoriais para apoiar prefeituras e estados na gestão de desastres e riscos ambientais. Seu objetivo é transformar um processo fragmentado e burocrático em um fluxo digital, automatizado e baseado em evidências, facilitando tanto a prevenção quanto a resposta a eventos climáticos extremos.  
+&emsp;A Consentia é uma infraestrutura ética que utiliza orquestração de agentes de inteligência artificial para apoiar o processo de avaliação de pesquisas científicas com seres humanos. A solução atua como uma camada de preparação, triagem e análise preliminar dos protocolos submetidos aos comitês de ética. O sistema é construído para acelerar o processo de avaliação, padronizar critérios e oferecer explicabilidade completa em cada recomendação gerada.
 
-&emsp;A solução foi desenhada para atuar em todo o ciclo de gestão do risco — da previsão à reconstrução — permitindo que gestores públicos identifiquem vulnerabilidades, acompanhem ações em andamento, planejem investimentos e prestem contas de forma padronizada e transparente.  
+&emsp;A plataforma recebe documentos como protocolos, anexos metodológicos e TCLE em formatos comuns como PDF ou DOCX. A partir desse ponto, a orquestração de agentes inicia um fluxo de análise estruturado que extrai informações essenciais, identifica riscos, verifica aderência normativa e avalia a clareza do TCLE. O resultado final é um parecer preliminar explicável que serve como insumo para o julgamento humano.
 
-&emsp;Por meio de inteligência artificial, georreferenciamento e automação documental, a plataforma reduz o tempo de resposta, melhora a qualidade dos relatórios e aumenta a eficiência na alocação de verbas.  
+&emsp;A solução funciona como suporte e nunca como substituição do parecerista. O foco é melhorar a qualidade e a previsibilidade das análises, reduzir retrabalho e ampliar a rastreabilidade do processo. Toda recomendação emitida vem acompanhada de justificativas, citações normativas, fontes e registros detalhados da decisão.
 
-## Objetivos  
+## Componentes Principais da Orquestração
 
-&emsp;A Consentia busca:  
+&emsp;A arquitetura da Consentia se organiza em torno de um orquestrador central que coordena cinco agentes especializados. Cada agente é responsável por uma parte da análise e contribui com informações específicas para compor o parecer preliminar. A combinação de diferentes agentes permite que a solução trate o protocolo a partir de múltiplas perspectivas.
 
-- Digitalizar e automatizar o processo de solicitação de recursos climáticos e ambientais.  
-- Integrar dados públicos e científicos em um único ambiente analítico.  
-- Apoiar a tomada de decisão com base em evidências e previsões financeiras.  
-- Reduzir o tempo entre o desastre e a liberação de verbas.  
-- Fortalecer a capacidade técnica e gerencial de municípios e estados.  
+&emsp;O AgentDoc é responsável por extrair dados criteriosamente dos documentos submetidos. Ele identifica variáveis essenciais do estudo, elementos metodológicos, critérios de inclusão e exclusão e informações estruturais do TCLE. Esse agente garante que todos os itens relevantes sejam destacados de maneira consistente.
 
-## Arquitetura da Solução  
+&emsp;O AgentLaw atua como verificador de aderência normativa. Ele cruza as informações extraídas com diretrizes como CNS 466, LGPD, GDPR e ICH-GCP. Sua função é alertar sobre possíveis violações, lacunas ou incongruências que possam impactar a avaliação ética do estudo.
 
-&emsp;A plataforma opera em quatro módulos principais que se conectam de forma integrada, oferecendo uma visão completa e dinâmica da situação climática e financeira dos territórios.  
+&emsp;O AgentRisk analisa riscos físicos, psicológicos, sociais e digitais relacionados ao protocolo. Ele avalia a gravidade, a probabilidade e a mitigação proposta pelo pesquisador. Esse agente também identifica populações vulneráveis e condições especiais que exigem maior rigor normativo.
 
-### 1. Mapa de Riscos Integrado  
+&emsp;O AgentConsent verifica a estrutura, clareza e acessibilidade do TCLE. Ele identifica trechos confusos, termos técnicos sem explicação e pontos que precisam de maior transparência. A análise inclui indicadores de legibilidade e recomendações concretas de melhoria.
 
-&emsp;O módulo centraliza dados climáticos, geoespaciais e financeiros para identificar pontos de vulnerabilidade e risco. A ferramenta cruza informações do INMET, MapBiomas, ANA, CPRM e outras fontes públicas, exibindo no mapa áreas suscetíveis a deslizamentos, inundações, secas e perdas econômicas.  
+&emsp;O AgentWriter junta as contribuições dos agentes anteriores e elabora o parecer preliminar. Ele organiza todas as evidências produzidas, destaca justificativas e compila recomendações de forma clara e rastreável. Esse parecer funciona como um insumo direto para o parecerista humano.
 
-&emsp;Os gestores podem visualizar os riscos em tempo real, filtrar por tipo de evento e gerar relatórios automáticos de vulnerabilidade, prontos para compor dossiês de solicitação de recursos.  
+## Resultados e Benefícios da Solução
 
-### 2. Painel de Monitoramento  
+&emsp;A Consentia produz como saída um parecer preliminar explicável, acompanhado de trilhas de auditoria completas, registro de regras acionadas e fontes consultadas. Os pareceristas recebem um documento estruturado que facilita a análise final, reduz o tempo necessário para leitura e melhora a consistência entre avaliações.
 
-&emsp;O painel permite acompanhar a execução de ações preventivas e emergenciais. Cada medida registrada — seja uma obra, intervenção ou programa — é georreferenciada e vinculada a indicadores de desempenho.  
+&emsp;Pesquisadores se beneficiam ao receber feedback antecipado sobre falhas comuns, principalmente em relação ao TCLE e à organização dos documentos. Isso reduz retrabalho e permite submissões mais completas. Secretarias conseguem organizar melhor o fluxo e reduzir etapas manuais, melhorando a eficiência operacional.
 
-&emsp;O sistema integra informações de campo e de parceiros externos, oferecendo uma visão consolidada das iniciativas em andamento e seus impactos, fortalecendo a transparência e a coordenação entre diferentes órgãos públicos.  
+&emsp;Outro benefício importante é a padronização. Como a análise é estruturada a partir dos mesmos critérios e das mesmas normas, a variabilidade entre pareceres diminui. Esse ganho de consistência fortalece a confiança institucional e melhora a previsibilidade para pesquisadores e equipes técnicas.
 
-### 3. Autoplano Climático  
+&emsp;A precisão é acompanhada por segurança. A solução incorpora princípios de proteção de dados por design, incluindo minimização, criptografia, retenção configurável e segregação por instituição. A arquitetura modular permite integração com plataformas externas, como Plataforma Brasil, módulos jurídicos setoriais, detectores de plágio, bases de integridade e ferramentas de anonimização.
 
-&emsp;Com o uso de inteligência artificial, o Autoplano gera automaticamente planos de mitigação e reconstrução padronizados. O sistema estrutura as informações técnicas e financeiras necessárias para submissão a fundos como FUNCAP, BNDES e recursos do MDR.  
-
-&emsp;Além de economizar tempo das equipes municipais, o módulo assegura conformidade com os requisitos federais, minimizando retrabalho e rejeição de pedidos por inconsistência documental.  
-
-### 4. Comparador de Impactos  
-
-&emsp;O módulo realiza análises comparativas entre custos de prevenção e de reconstrução, oferecendo projeções financeiras e indicadores de retorno sobre investimento público.  
-
-&emsp;Com base em modelos preditivos, o sistema quantifica quanto o município economizaria ao investir em obras preventivas em vez de reagir após um desastre. Essa visão ajuda a priorizar políticas públicas mais eficientes e sustentáveis.  
-
-## Benefícios Operacionais  
-
-&emsp;A Consentia simplifica e acelera os processos administrativos ligados à gestão climática, garantindo resultados práticos e mensuráveis:  
-
-- Redução de até 70% no tempo de preparação de dossiês para solicitação de verba.  
-- Padronização automática de relatórios técnicos e financeiros.  
-- Melhoria da precisão na identificação de áreas críticas.  
-- Transparência nos gastos e nas ações executadas.  
-- Ampliação da capacidade técnica das equipes municipais e estaduais.  
-
-## Modelo de Funcionamento  
-
-&emsp;A plataforma opera no modelo SaaS (Software as a Service), contratada diretamente por entes públicos via licitação ou convênio. Cada cliente tem acesso a um painel personalizado, com suporte técnico, capacitação e módulos opcionais conforme sua realidade territorial.  
-
-&emsp;A estrutura modular permite expansão contínua, incluindo futuras integrações com sistemas federais e novos módulos voltados a riscos ambientais, como erosão, contaminação do solo e poluição hídrica.  
-
-## Valor Público  
-
-&emsp;Mais do que uma ferramenta digital, a Consentia representa uma mudança de paradigma na gestão pública de desastres. Ao substituir processos manuais por análises inteligentes, a plataforma fortalece a governança climática, reduz desperdícios e protege vidas.  
-
-&emsp;O resultado é um Estado mais preparado, com decisões baseadas em dados e maior capacidade de resposta diante das crises climáticas que já fazem parte da realidade brasileira.  
+&emsp;Com essas capacidades, a Consentia se consolida como uma infraestrutura ética capaz de escalar avaliações com qualidade, transparência e responsabilidade, mantendo o ser humano no centro das decisões e utilizando a inteligência artificial como apoio analítico estruturado.
