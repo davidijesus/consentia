@@ -1,41 +1,23 @@
-# Website
+# Consentia documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This directory contains the Docusaurus site for the [Consentia concept](../README.md). The research pages are in Portuguese and describe a proposed human-supervised ethical review workflow. They do not document a running agent service.
 
-## Installation
+## Local development
 
-```bash
-yarn
-```
-
-## Local Development
+Use Node.js 20 or newer and npm from this directory:
 
 ```bash
-yarn start
+npm ci
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+## Verify the static site
 
 ```bash
-yarn build
+npm run build
+npm run serve
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+The built files are written to `build/`. The configured public base path is `/consentia/`; keep it when checking local routes. Publishing to GitHub Pages is a separate release action and is not required for README-only changes.
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The [root README](../README.md) describes the repository scope and limitations. Research pages are under `docs/`, and images are under `static/`.
